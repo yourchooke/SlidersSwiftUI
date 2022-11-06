@@ -26,7 +26,8 @@ struct ColorSliderView: View {
                 .toolbar {
                     ToolbarItem(placement: .keyboard) {
                         if colorIsFocused {
-                            Button("OK", action: {colorIsFocused = false}) }
+                            Button("OK", action: {colorIsFocused = false})
+                        }
                     }
                 }
         }
