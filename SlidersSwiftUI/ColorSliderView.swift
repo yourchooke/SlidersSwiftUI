@@ -25,12 +25,13 @@ struct ColorSliderView: View {
                 .focused($colorIsFocused)
                 .toolbar {
                     ToolbarItem(placement: .keyboard) {
-                        Button("OK") {
-                            colorIsFocused = false
-                        }
+                        if colorIsFocused {
+                            Button("OK", action: {colorIsFocused = false}) }
                     }
                 }
         }
         .padding()
     }
+    
+
 }
