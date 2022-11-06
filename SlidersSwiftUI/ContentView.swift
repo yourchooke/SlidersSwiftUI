@@ -21,14 +21,12 @@ struct ContentView: View {
                     blue: blueValue/255
                 )
             )
-            Slider(value: $redValue, in: 0...255)
-            Slider(value: $greenValue, in: 0...255)
-            Slider(value: $blueValue, in: 0...255)
+            ColorSliderView(value: $redValue, color: .red)
+            ColorSliderView(value: $greenValue, color: .green)
+            ColorSliderView(value: $blueValue, color: .blue)
         }
         .padding()
     }
-    
-
 }
 
 struct ContentView_Previews: PreviewProvider {
