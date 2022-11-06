@@ -11,6 +11,8 @@ struct ColorSliderView: View {
     @Binding var value: Double
     var color: Color
     
+    @FocusState private var colorIsFocused: Bool
+
     var body: some View {
         HStack {
             Text("\(lround(value))")
@@ -18,7 +20,16 @@ struct ColorSliderView: View {
                 .tint(color)
             TextField("", value: $value, formatter: NumberFormatter())
                 .frame(width: 50)
-                .textFieldStyle(.roundedBorder)                
+                .textFieldStyle(.roundedBorder)
+                .keyboardType(.decimalPad)
+                .focused($colorIsFocused)
+                .toolbar {
+                    ToolbarItem(placement: .keyboard) {
+                        Button("OK") {
+                            colorIsFocused = false
+                        }
+                    }
+                }
         }
         .padding()
     }
