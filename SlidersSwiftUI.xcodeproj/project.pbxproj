@@ -11,6 +11,8 @@
 		270AE0D92916B71E00AE368F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270AE0D82916B71E00AE368F /* ContentView.swift */; };
 		270AE0DB2916B71F00AE368F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270AE0DA2916B71F00AE368F /* Assets.xcassets */; };
 		270AE0DE2916B71F00AE368F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270AE0DD2916B71F00AE368F /* Preview Assets.xcassets */; };
+		270AE0E72917744A00AE368F /* ColoredRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270AE0E62917744A00AE368F /* ColoredRectangle.swift */; };
+		270AE0E929177CF500AE368F /* ColorSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270AE0E829177CF500AE368F /* ColorSliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		270AE0D82916B71E00AE368F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		270AE0DA2916B71F00AE368F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270AE0DD2916B71F00AE368F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		270AE0E62917744A00AE368F /* ColoredRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredRectangle.swift; sourceTree = "<group>"; };
+		270AE0E829177CF500AE368F /* ColorSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				270AE0D62916B71E00AE368F /* SlidersSwiftUIApp.swift */,
+				270AE0E62917744A00AE368F /* ColoredRectangle.swift */,
 				270AE0D82916B71E00AE368F /* ContentView.swift */,
+				270AE0E829177CF500AE368F /* ColorSliderView.swift */,
 				270AE0DA2916B71F00AE368F /* Assets.xcassets */,
 				270AE0DC2916B71F00AE368F /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270AE0E72917744A00AE368F /* ColoredRectangle.swift in Sources */,
+				270AE0E929177CF500AE368F /* ColorSliderView.swift in Sources */,
 				270AE0D92916B71E00AE368F /* ContentView.swift in Sources */,
 				270AE0D72916B71E00AE368F /* SlidersSwiftUIApp.swift in Sources */,
 			);
