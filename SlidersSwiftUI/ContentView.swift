@@ -15,11 +15,10 @@ struct ContentView: View {
     var body: some View {
         VStack {
             ColoredRectangle(
-                color: Color(
-                    red: redValue/255,
-                    green: greenValue/255,
-                    blue: blueValue/255
-                )
+                    red: redValue,
+                    green: greenValue,
+                    blue: blueValue
+
             )
             ColorSliderView(value: $redValue, color: .red)
             ColorSliderView(value: $greenValue, color: .green)
