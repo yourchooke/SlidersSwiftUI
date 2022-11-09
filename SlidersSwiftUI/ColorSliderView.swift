@@ -10,8 +10,8 @@ import SwiftUI
 struct ColorSliderView: View {
     @Binding var value: Double
     var color: Color
-    
-    @FocusState private var colorIsFocused: Bool
+
+
 
     var body: some View {
         HStack {
@@ -22,14 +22,7 @@ struct ColorSliderView: View {
                 .frame(width: 50)
                 .textFieldStyle(.roundedBorder)
                 .keyboardType(.decimalPad)
-                .focused($colorIsFocused)
-                .toolbar {
-                    ToolbarItem(placement: .keyboard) {
-                        if colorIsFocused {
-                            Button("OK", action: {colorIsFocused = false})
-                        }
-                    }
-                }
+                
         }
         .padding()
     }
